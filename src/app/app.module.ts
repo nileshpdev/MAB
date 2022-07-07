@@ -10,6 +10,8 @@ import { AddressComponent } from './address/address.component';
 import { MaterialUi } from '../material.module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ResultsComponent } from './results/results.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ResultsService } from './results.service';
 
 
 
@@ -29,8 +31,9 @@ import { ResultsComponent } from './results/results.component';
     RouterModule,
     MaterialUi,
     MatNativeDateModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ResultsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

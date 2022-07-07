@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Result } from '../interface/result'
+
 
 @Component({
   selector: 'app-info',
